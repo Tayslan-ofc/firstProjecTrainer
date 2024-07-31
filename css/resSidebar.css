@@ -1,0 +1,43 @@
+@media screen and (max-width: 1000px) {
+    .sidebar {
+        height: 100%;
+        width: 200px;
+        padding: 10px 14px;
+    }
+
+    .sidebar.close {
+        width: 60px;
+    }
+
+    .sidebar li .icon {
+        min-width: 30px;
+        font-size: 18px;
+    }
+
+    .separete-line i {
+        min-width: 30px;
+        font-size: 20px;
+    }
+
+    .sidebar .separete-line .icon {
+        margin-right: 10px;
+    }
+
+    .sidebar .separete-line {
+        height: 30px;
+    }
+
+    .sidebar .image-text img {
+        width: 30px;
+    }
+
+    .sidebar .image {
+        min-width: 40px;
+    }
+
+    .sidebar .header-sidebar .toggle {
+        height: 35px;
+        width: 35px;
+        font-size: 35px;
+    }
+}

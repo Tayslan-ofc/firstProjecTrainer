@@ -1,0 +1,34 @@
+@media only screen and (max-width: 1000px) {
+  #banner h1 {
+    font-size: 2em;
+  }
+
+  .container {
+    min-width: 680px;
+  }
+
+  #header-two {
+    width: 100%;
+    padding: 30px 4%;
+  }
+
+  #header-two i {
+    font-size: 25px;
+    margin: auto;
+  }
+
+  #header-two ul li {
+    font-size: 2vh;
+    margin: 0 20px;
+  }
+
+  .btn-contato button {
+    width: 100%;
+    
+   padding: 0 15px;
+  }
+
+  .btn-contato a button{
+    font-size: 15px;
+  }
+}
