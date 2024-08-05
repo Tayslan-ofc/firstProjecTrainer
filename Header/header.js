@@ -10,7 +10,7 @@ const colorToggle = document.querySelector('.toggle');
 window.addEventListener('scroll', function () {
   const header = document.querySelector('#header-two');
   const scrollY = window.scrollY;
-  const sections = document.querySelectorAll('section');
+  const sections = document.querySelectorAll('.section-scrolling');
 
   let currentSection;
   for (const section of sections) {
@@ -43,29 +43,29 @@ window.addEventListener('scroll', function () {
   });
 
   if (currentSection) {
-    header.classList.remove('rolagem-banner', 'rolagem-one', 'rolagem-two', 'rolagem-three', 'rolagem-four');
+    header.classList.remove('scrolling-banner', 'scrolling-one', 'scrolling-two', 'scrolling-three', 'scrolling-four');
     if (scrollY > 0 && currentSection === 'banner') {
-      header.classList.add('rolagem-banner');
+      header.classList.add('scrolling-banner');
       colorToggle.style.background = colorHoverInitial;
       colorBtn.forEach(button => button.style.background = colorHoverInitial);
     } else if (currentSection === 'sec-one') {
-      header.classList.add('rolagem-one');
+      header.classList.add('scrolling-one');
       colorToggle.style.background = colorHoverOne;
       colorBtn.forEach(button => button.style.background = colorHoverOne);
     } else if (currentSection === 'sec-two') {
-      header.classList.add('rolagem-two');
+      header.classList.add('scrolling-two');
       colorToggle.style.background = colorHoverTwo;
       colorBtn.forEach(button => button.style.background = colorHoverTwo);
     } else if (currentSection === 'sec-three') {
-      header.classList.add('rolagem-three');
+      header.classList.add('scrolling-three');
       colorToggle.style.background = colorHoverThree;
       colorBtn.forEach(button => button.style.background = colorHoverThree);
     } else if (currentSection === 'sec-four') {
-      header.classList.add('rolagem-four');
+      header.classList.add('scrolling-four');
       colorToggle.style.background = colorHoverFour;
       colorBtn.forEach(button => button.style.background = colorHoverFour);
     } else {
-      header.classList.remove('rolagem-banner', 'rolagem-one', 'rolagem-two', 'rolagem-three', 'rolagem-four');
+      header.classList.remove('scrolling-banner', 'scrolling-one', 'scrolling-two', 'scrolling-three', 'scrolling-four');
       colorToggle.style.removeProperty('background');
       colorBtn.forEach(button => button.style.removeProperty('background'));
     }
