@@ -1,0 +1,37 @@
+/* FOOTER */
+
+footer {
+    background-color: var(--body-color);
+    justify-content: center;
+  }
+  
+  .footer-head {
+    display: flex;
+    color: var(--text-color);
+    justify-content: space-evenly;
+    padding-left: 2vh;
+    padding: 4vh;
+  }
+  
+  .footer-head cite,
+  .footer-head h3 {
+    cursor: pointer;
+  }
+  
+  .footer-end {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: var(--foot-color);
+    justify-content: space-evenly;
+    padding: 10vh;
+    color: var(--body-color);
+  }
+  
+  .foot-one p,
+  .foot-two p,
+  .foot-three p {
+    cursor: pointer;
+    font-size: 12px;
+    color: var();
+  }

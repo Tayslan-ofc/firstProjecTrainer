@@ -44,8 +44,15 @@ body.dark {
   background: var(--sidebar-color);
   transition: var(--tran-03);
   border-top-right-radius: 40px;
-  z-index: 1;
+  z-index: 2;
+  max-width: 100%;
 }
+
+.sidebar img,
+.sidebar li{
+  max-width: 1590px;
+  max-height: 1000px;
+} 
 
 .sidebar.close {
   width: 80px;
@@ -53,10 +60,10 @@ body.dark {
 
 .sidebar .text,
 .sidebar .separate-line .text-line {
-  font-size: 16px;
+  font-size: clamp(0.5rem, 1vw, 5rem);
   font-weight: 500;
   color: var(--text-color);
-  transition: var(--tran-02);
+  transition: none;
   white-space: nowrap;
   opacity: 1;
 }
@@ -68,7 +75,8 @@ body.dark {
 }
 
 .sidebar .image {
-  min-width: 60px;
+  padding-right: 5%;
+  font-size: clamp(0.5rem, 1vw, 5rem);
   display: flex;
   align-items: center;
 }
@@ -104,7 +112,7 @@ body.dark {
   align-items: center;
   justify-content: center;
   min-width: 100%;
-  font-size: 20px;
+  font-size: clamp(1rem, 1.3vw, 5rem);
 }
 
 .sidebar li .icon,
@@ -146,15 +154,13 @@ body.dark {
   top: 50%;
   right: -35px;
   transform: translateY(-50%) rotate(180deg);
-  height: 40px;
-  width: 40px;
   background-color: var(--banner-color);
   color: var(--sidebar-color);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 40px;
+  font-size: clamp(1rem, 2.3vw, 3rem);
   cursor: pointer;
   color: var(--primary-color-light);
   transition: all 0.8s ease;
@@ -175,7 +181,7 @@ body.dark {
   border: none;
   outline: none;
   border-radius: inherit;
-  font-size: 18px;
+  font-size: clamp(1rem, 1vw, 5rem);
   font-family: 'poppins' sans-serif;
   color: var(--text-color);
   background: var(--primary-color-light);
@@ -231,86 +237,11 @@ body.dark {
 
 ::-webkit-scrollbar-thumb {
   background: var(--scrollbar-thumb-color);
-  /* Define a cor do indicador da barra de rolagem */
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-track {
   background-color: var(--scrollbar-track-color);
-  /* Define a cor da trilha da barra de rolagem */
   border-radius: 10px;
 }
 
-/* MENU-BAR ------------------------------------------------------*/
-
-.menu-bar .mode {
-  position: relative;
-  background: var(--primary-color-light);
-  border-radius: 6px;
-}
-
-.menu-bar .mode .moon-sun {
-  height: 50px;
-  width: 50px;
-  display: flex;
-  align-items: center;
-}
-
-.menu-bar .mode i {
-  position: absolute;
-}
-
-.menu-bar .mode i.sun {
-  opacity: 1;
-}
-
-.menu-bar .mode i.moon {
-  opacity: 0;
-}
-
-.menu-bar .mode .text-light {
-  position: absolute;
-  visibility: inherit;
-  transition: none;
-}
-
-.menu-bar .mode .text-dark {
-  visibility: hidden;
-  transition: none;
-}
-
-.menu-bar .mode .toggle-switch {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  min-width: 48px;
-  cursor: pointer;
-  transition: var(--tran-04);
-  right: 0;
-}
-
-.toggle-switch .switch {
-  position: relative;
-  height: 22px;
-  width: 44px;
-  border-radius: 25px;
-  background: var(--toggle-color);
-}
-
-.switch::before {
-  content: "";
-  position: absolute;
-  margin-left: 3px;
-  height: 15px;
-  width: 15px;
-  border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
-  background: var(--sidebar-color);
-  cursor: pointer;
-  transition: var(--tran-03);
-}
-
-body.dark .switch::before {
-  left: 24px;
-}

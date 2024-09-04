@@ -1,0 +1,74 @@
+/* MENU-BAR ------------------------------------------------------*/
+
+.menu-bar .mode {
+    position: relative;
+    background: var(--primary-color-light);
+    border-radius: 6px;
+  }
+  
+  .menu-bar .mode .moon-sun {
+    max-height: 50%;
+    min-width: 25%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu-bar .mode i {
+    position: absolute;
+  }
+  
+  .menu-bar .mode i.sun {
+    opacity: 1;
+  }
+  
+  .menu-bar .mode i.moon {
+    opacity: 0;
+  }
+  
+  .menu-bar .mode .text-light {
+    position: absolute;
+    visibility: inherit;
+    transition: none;
+  }
+  
+  .menu-bar .mode .text-dark {
+    visibility: hidden;
+    transition: none;
+  }
+  
+  .menu-bar .mode .toggle-switch {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    min-width: 48px;
+    cursor: pointer;
+    transition: var(--tran-04);
+    right: 0;
+  }
+  
+  .toggle-switch .switch {
+    position: relative;
+    height: 22px;
+    width: 44px;
+    border-radius: 25px;
+    background: var(--toggle-color);
+  }
+  
+  .switch::before {
+    content: "";
+    position: absolute;
+    margin-left: 3px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--sidebar-color);
+    cursor: pointer;
+    transition: var(--tran-03);
+  }
+  
+  body.dark .switch::before {
+    left: 24px;
+  }
+  
