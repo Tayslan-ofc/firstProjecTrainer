@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SIDEBAR -->
+  <link rel="stylesheet" href="/Sidebar/css/sidebar.css" />
+  <link rel="stylesheet" href="/Sidebar/css/sidebarMenuBar.css" />
+  <!-- HEADER -->
   <link rel="stylesheet" href="/Header/css/header.css" />
   <link rel="stylesheet" href="/Header/css/headerSections.css" />
   <link rel="stylesheet" href="/Header/css/headerFooter.css" />
-  <link rel="stylesheet" href="/Sidebar/css/sidebar.css" />
-  <link rel="stylesheet" href="/Sidebar/css/sidebarMenuBar.css" />
+  <!-- RESPONSIVE -->
   <link rel="stylesheet" href="/css/resHeader.css" />
   <link rel="stylesheet" href="/css/resSidebar.css" />
   <link rel="stylesheet" href="/css/root.css">
+
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <link rel="icon"
     href="https://tse1.mm.bing.net/th/id/OIG3.WDOWHBT7ceQiwC1nZrGx?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" />
+    <meta http-equiv="Content-Language" content="pt-br">
   <title>Tay:Tay:</title>
 </head>
 
@@ -23,9 +28,9 @@
 
     <!-- HEADER SIDEBAR CLOSE -->
     <header class="header-sidebar">
-      <section class="image-text">
+      <section class="logo-text">
         <span class="image">
-          <img src="./img/LogoT.jpeg" alt="LogoT" />
+          <img id="logo" src="/img/LogoT.jpeg" alt="LogoT" />
         </span>
         <section class="text header-text">
           <span class="name">Tayslan</span>
@@ -59,13 +64,13 @@
           <li class="nav-link">
             <a href="#sec-one">
               <i class="bx bx-credit-card-front icon"></i>
-              <span class="text nav-text">PASSAGENS</span>
+              <span class="text nav-text">PASSAGES</span>
             </a>
           </li>
           <li class="nav-link">
             <a href="#sec-two">
               <i class="bx bxs-plane-take-off icon"></i>
-              <span class="text nav-text">DESTINOS</span>
+              <span class="text nav-text">PLACES</span>
             </a>
           </li>
           <li class="nav-link">
@@ -194,14 +199,14 @@
         <nav>
           <ul class="ul">
             <li><a id="underline" href="#banner">HOME</a></li>
-            <li><a id="underline" href="#sec-one">PASSAGENS</a></li>
-            <li><a id="underline" href="#sec-two">DESTINOS</a></li>
-            <li><a id="underline" href="#sec-three">CONTATOS</a></li>
+            <li><a id="underline" href="#sec-one">PASSAGES</a></li>
+            <li><a id="underline" href="#sec-two">PLACES</a></li>
+            <li><a id="underline" href="#sec-three">CONTACTS</a></li>
             <li><a id="underline" href="#sec-four">BLOG</a></li>
           </ul>
         </nav>
         <section class="btn-contato">
-          <a href="#"><button>CONTATO</button></a>
+          <a href="#"><button>CONTACTS</button></a>
         </section>
       </section>
     </section>
@@ -210,7 +215,7 @@
   <!-- MAIN HEADER-TWO -->
   <main>
     <section class="section-scrolling" id="banner">
-      <h1>DESCUBRA <span class="multiText"></span></h1>
+      <h1>DISCOVER <span class="multiText"></span></h1>
     </section>
     <section class="section-scrolling" id="sec-one">
       <section class="sec-text-one">
@@ -272,7 +277,7 @@
         <h3>Lorem</h3>
         <h3>Ipsum</h3>
       </section>
-      <section class="footer-end">
+      <section class="footer-mid">
         <section class="foot-one">
           <h4>Lorem Ipsum</h4>
           <p>Lorem ipsum dolor</p>
@@ -295,12 +300,15 @@
           <p>Adipiscing elit</p>
         </section>
       </section>
+      <section class="footer-end">
+        <strong>Copyright. © Tayslan 2024</strong>
+      </section>
     </footer>
   </main>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script src="/Header/header.js"></script>
-<script src="/Sidebar/sidebar.js"></script>
+<script src="/Header/js/header.js"></script>
+<script src="/Sidebar/js/sidebar.js"></script>
 
 </html>

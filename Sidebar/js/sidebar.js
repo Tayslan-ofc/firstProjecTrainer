@@ -65,8 +65,8 @@ function alternarTamanho() {
     header.style.marginLeft = "10%";
     header.style.width = "90%";
     toggle.style.transform = "translateY(-50%) rotate(0deg)";
-    secTextOne.style.marginLeft = "30vh";
-    secTextThree.style.marginLeft = "30vh";
+    secTextOne.style.marginLeft = "40vh";
+    secTextThree.style.marginLeft = "40vh";
     modeSwitchAll.forEach(modeSwitch => modeSwitch.style.right = "3%");
     coverInput.forEach(coverInput => coverInput.style.opacity = "1");
     sidebarIconMin.forEach(sidebarIconMin => sidebarIconMin.style.minWidth = "25%");

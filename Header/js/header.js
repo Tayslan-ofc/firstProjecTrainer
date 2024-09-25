@@ -73,7 +73,7 @@ window.addEventListener('scroll', function () {
 });
 
 var typingEffect = new Typed(".multiText", {
-  strings: ["NOVOS MUNDOS", "NOVOS CAMINHOS", "NOVOS DESTINOS", "NOVOS CONHECIMENTOS"],
+  strings: ["NEW WORLDS", "NEW WAYS", "NEW DESTINYS", "NEW EXPERIENCES"],
   loop: true,
   typeSpeed: 100,
   backSpeed: 80,

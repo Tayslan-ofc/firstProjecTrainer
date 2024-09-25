@@ -1,9 +1,9 @@
-/* Sections */
+/* SECTIONS */
 
 #banner {
     width: 100%;
     height: 100%;
-    background-image: url(/Header/img/img-1.jpg);
+    background-image: url(/img/img-1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -45,19 +45,19 @@
   }
   
   #sec-one {
-    background-image: url(/Header/img/img-2.jpg);
+    background-image: url(/img/img-2.jpg);
   }
   
   #sec-two{
-    background-image: url(/Header/img/img-3.jpg);
+    background-image: url(/img/img-3.jpg);
   }
   
   #sec-three{
-    background-image: url(/Header/img/img-4.jpg);
+    background-image: url(/img/img-4.jpg);
   }
   
   #sec-four{
-    background-image: url(/Header/img/img-5.jpg);
+    background-image: url(/img/img-5.jpg);
   }
   
   .sec-text-one,
@@ -94,6 +94,7 @@
    .sec-text-three,
    .sec-text-four {
     backdrop-filter: blur(2em);
+    background-color: rgba(0, 0, 0, 0.2);
     border-radius: 5%;
     max-width: 30%;
     max-height: 60%;
