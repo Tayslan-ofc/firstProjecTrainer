@@ -3,7 +3,7 @@
 .menu-bar .mode {
     position: relative;
     background: var(--primary-color-light);
-    border-radius: 6px;
+    border-radius: 3vw;
   }
   
   .menu-bar .mode .moon-sun {
@@ -24,6 +24,13 @@
   .menu-bar .mode i.moon {
     opacity: 0;
   }
+
+  .menu-bar .mode .text-light,
+  .menu-bar .mode .text-dark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   
   .menu-bar .mode .text-light {
     position: absolute;
@@ -40,26 +47,34 @@
     position: absolute;
     display: flex;
     align-items: center;
-    min-width: 48px;
+    min-width: 4vw;
     cursor: pointer;
     transition: var(--tran-04);
     right: 0;
   }
+
+  .toggle-switch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   
+  /* TOGGLE SWITCH = BODY OF SWITCH OR BALL */
   .toggle-switch .switch {
     position: relative;
-    height: 22px;
-    width: 44px;
-    border-radius: 25px;
+    height: 2.5vh;
+    width: 3vw;
+    border-radius: 3vh;
     background: var(--toggle-color);
   }
   
+  /* SWITCH = BALL OF TOGGLE */
   .switch::before {
     content: "";
     position: absolute;
-    margin-left: 3px;
-    height: 15px;
-    width: 15px;
+    margin-left: 0.2vw;
+    height: 1.5vh;
+    width: 1.5vh;
     border-radius: 50%;
     top: 50%;
     transform: translateY(-50%);
@@ -69,6 +84,6 @@
   }
   
   body.dark .switch::before {
-    left: 24px;
+    left: 3.3vh;
   }
   

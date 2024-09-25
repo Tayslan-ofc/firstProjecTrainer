@@ -24,7 +24,7 @@ footer {
     width: 100%;
     background-color: var(--foot-color);
     justify-content: space-evenly;
-    padding: 10vh;
+    padding: 5vh;
     color: var(--body-color);
   }
   
