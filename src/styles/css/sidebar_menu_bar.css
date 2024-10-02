@@ -1,0 +1,87 @@
+/* MENU-BAR ------------------------------------------------------*/
+.menu-bar .mode {
+  position: relative;
+  background: var(--primary-color-light);
+  border-radius: 3vw;
+}
+
+.menu-bar .mode .moon-sun {
+  max-height: 50%;
+  min-width: 25%;
+  display: flex;
+  align-items: center;
+}
+
+.menu-bar .mode i {
+  position: absolute;
+}
+
+.menu-bar .mode i.sun {
+  opacity: 1;
+}
+
+.menu-bar .mode i.moon {
+  opacity: 0;
+}
+
+.menu-bar .mode .text-light,
+.menu-bar .mode .text-dark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-bar .mode .text-light {
+  position: absolute;
+  visibility: inherit;
+  transition: none;
+}
+
+.menu-bar .mode .text-dark {
+  visibility: hidden;
+  transition: none;
+}
+
+.menu-bar .mode .toggle-switch {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  min-width: 4vw;
+  cursor: pointer;
+  transition: var(--tran-04);
+  right: 0;
+}
+
+.toggle-switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* TOGGLE SWITCH = BODY OF SWITCH OR BALL */
+.toggle-switch .switch {
+  position: relative;
+  height: 2.5vh;
+  width: 3vw;
+  border-radius: 3vh;
+  background: var(--toggle-color);
+}
+
+/* SWITCH = BALL OF TOGGLE */
+.switch::before {
+  content: "";
+  position: absolute;
+  margin-left: 0.2vw;
+  height: 1.5vh;
+  width: 1.5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--sidebar-color);
+  cursor: pointer;
+  transition: var(--tran-03);
+}
+
+body.dark .switch::before {
+  left: 3.3vh;
+}/*# sourceMappingURL=sidebar_menu_bar.css.map */

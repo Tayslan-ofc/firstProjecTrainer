@@ -1,0 +1,51 @@
+/* FOOTER */
+footer {
+  background-color: var(--body-color);
+  justify-content: center;
+}
+
+.footer-head {
+  display: flex;
+  color: var(--text-color);
+  justify-content: space-evenly;
+  padding-left: 2vh;
+  padding: 4vh;
+}
+
+.footer-head cite,
+.footer-head h3 {
+  cursor: pointer;
+}
+
+.footer-mid {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: var(--foot-color);
+  justify-content: space-evenly;
+  padding: 5vh;
+  color: var(--body-color);
+}
+
+.foot-one p,
+.foot-two p,
+.foot-three p {
+  cursor: pointer;
+  font-size: clamp(1rem, 0.5vw, 3rem);
+  color: var();
+}
+
+.footer-end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--body-color);
+  padding: 4vh;
+}
+
+.footer-end strong {
+  color: var(--text-color);
+  font-size: clamp(1rem, 0.5vw, 3rem);
+}/*# sourceMappingURL=header_footer.css.map */
