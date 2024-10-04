@@ -1,51 +1,43 @@
-/* FOOTER */
 footer {
   background-color: var(--body-color);
   justify-content: center;
 }
-
-.footer-head {
+footer .footer-head {
   display: flex;
-  color: var(--text-color);
   justify-content: space-evenly;
+  color: var(--text-color);
   padding-left: 2vh;
   padding: 4vh;
 }
-
-.footer-head cite,
-.footer-head h3 {
+footer .footer-head cite,
+footer .footer-head h3 {
   cursor: pointer;
 }
-
-.footer-mid {
+footer .footer-mid {
   display: flex;
-  height: 100%;
-  width: 100%;
-  background-color: var(--foot-color);
   justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  background-color: var(--foot-color);
   padding: 5vh;
   color: var(--body-color);
 }
-
-.foot-one p,
-.foot-two p,
-.foot-three p {
+footer .foot-one p,
+footer .foot-two p,
+footer .foot-three p {
   cursor: pointer;
   font-size: clamp(1rem, 0.5vw, 3rem);
-  color: var();
 }
-
-.footer-end {
+footer .footer-end {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   background-color: var(--body-color);
   padding: 4vh;
 }
-
-.footer-end strong {
+footer .footer-end strong {
   color: var(--text-color);
   font-size: clamp(1rem, 0.5vw, 3rem);
-}/*# sourceMappingURL=header_footer.css.map */
+}

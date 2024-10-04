@@ -1,46 +1,25 @@
-/* SECTIONS */
+@import "../scss/mixins.scss";
 
 #banner {
-    width: 100%;
-    height: 100%;
+    @include width-and-height-equal(100%);
+    @include image-with-attachment;
+    @include flex-center;
     background-image: url(/assets/img/img-1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
     transition: all 0.5s ease-in-out;
   }
   
   #sec-one,
   #sec-three {
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-  
-    display: flex;
-    align-items: center;
-    justify-content: left;
+    @include width-and-height-equal(100%);
+    @include image-with-attachment;
+    @include justify-and-align(left, center);
     transition: all 0.5s ease-in-out;
   }
   #sec-two,
   #sec-four {
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-  
-    display: flex;
-    align-items: center;
-    justify-content: right;
+    @include width-and-height-equal(100%);
+    @include image-with-attachment;
+    @include justify-and-align(right, center);
     transition: all 0.5s ease-in-out;
   }
   

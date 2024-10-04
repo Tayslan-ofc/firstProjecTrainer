@@ -1,0 +1,38 @@
+@mixin flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin justify-and-align($justify, $align) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin chooce-align($align) {
+    display: flex;
+    align-items: $align;
+}
+
+@mixin chooce-justify($justify) {
+    display: flex;
+    justify-content: $justify;
+}
+
+@mixin width-and-height-equal($size) {
+    width: $size;
+    height: $size;
+}
+
+@mixin width-and-height($size-width, $size-height) {
+    width: $size-width;
+    height: $size-height;
+}
+
+@mixin image-with-attachment {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
